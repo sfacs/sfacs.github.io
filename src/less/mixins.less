@@ -1,0 +1,93 @@
+.regular-block {
+	h3 { 
+		color: @headerAccentColor;
+	}
+		h5 {
+		  font-size: 1.2em;
+		}
+}
+
+//Needs an .overlay div inside the block
+//Ex:
+//<div id="practiceArea">
+//		<div class="overlay">
+//				<div class="container">
+//
+.image-accent-block(@img) {
+  	
+  	color: @black;
+	background: url(@img) @accentColor;
+		.overlay { 
+			background: @photoOverlayColor;
+		}
+		h1,h2,h3,h4 {
+			color: @reverseHeaderColor;
+		}
+		h5 {
+		  color: @black;
+		  font-weight:200;
+		  margin-bottom:20px;
+		}
+}
+
+.neutral-block {
+	background: @lightGray;
+	h1,h2,h3,h4 {
+		color: @darkGray;
+	}
+
+	h4 {
+	  margin-bottom:30px;
+	}
+
+
+}
+
+.navbarAo(@linkColor) {
+.navbar-default {
+
+				.nav {
+				  padding-left: 20px;
+				}
+				.nav>li>a {
+					padding: 10px 20px;
+				}
+
+				background:transparent;
+				border: 0px;
+				.navbar-collapse {
+						border: none;
+				}
+
+				.navbar-nav {
+						&>.active>a, 
+						&>.active>a:hover, 
+						&>.active>a:focus {
+								@media (max-width: @screen-sm-min) { 
+										background: @darkGray;
+										color: @lightGray;
+								}
+								background: transparent;
+								color: @linkColor;
+								font-weight:bold;
+						}
+
+						&>li>a:hover {
+								@media (max-width: @screen-sm-min) { 
+										background: @darkGray;
+										color: @lightGray;
+								}
+								color: @linkColor;
+						}
+
+
+						&>li>a {
+								@media (max-width: @screen-sm-min) { 
+										background: @lightGray;
+										color: @darkGray;
+								}
+								color: @linkColor;
+						}
+				}
+		}
+}
