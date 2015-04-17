@@ -10,7 +10,7 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1")
 
     // Font
-    link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Open+Sans")
+    link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Open+Sans|Patua+One|Roboto+Condensed|Crete+Round")
 
     // CSS
     link(rel="stylesheet",type="text/css",href="css/styles.css")
@@ -24,18 +24,20 @@ html(lang="en")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js")
 
   body
-    h1 I AM AN ENGINEER.
-    .contact.
-      JULIEN VERFAILLIE<br>
-      #[i Fluent in French, English and Spanish]<br>
-      (305) 898 9564<br>
-      16363 SW 47th Ct<br>
-      Miramar, FL 33027 <br>
-      julien.verfaillie@gmail.com <br>
-      #[a(href="www.iamanengineer.net") www.iamanengineer.net]<br>
-      #[a(href="www.iamnotanengineer.net") www.iam#[strong not]anengineer.net]
+    header
+      h1 I AM AN ENGINEER.
+      .contact
+        h2 JULIEN VERFAILLIE
+        p.
+          #[i Fluent in French, English and Spanish]<br>
+          (305) 898 9564<br>
+          16363 SW 47th Ct<br>
+          Miramar, FL 33027 <br>
+          julien.verfaillie@gmail.com <br>
+          #[a(href="www.iamanengineer.net") www.iamanengineer.net]<br>
+          #[a(href="www.iamnotanengineer.net") www.iam#[strong not]anengineer.net]
 
-    #employments
+    section#employments
       h2 Employment History
       .employment
         h3 Since Sep. 2013
@@ -92,7 +94,7 @@ html(lang="en")
         h4 Cabinet KPMG - Accoutant
         p Integration in a public accountant team.
 
-    #educations
+    section#educations
       h2 Education
       .education
         h3 2007 - 2010
@@ -121,7 +123,7 @@ html(lang="en")
         h4 Lycée la Providence Amiens
         p Baccalauréat - Majored in Sciences
 
-    #knowledges
+    section#knowledges
       h2 Technical Knowledge
       .knowledge
         h3 Software development
