@@ -1,19 +1,11 @@
 $(document).ready(function () {
- 
-  function scrollToTop() {
-    if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
-      window.scrollBy(0,-50);
-      timeOut=setTimeout('scrollToTop()',50);
-    }
-    else clearTimeout(timeOut);
-  }
 
 
   function printSentence(sentence){
     setTimeout(function() {
       $("body").html(body);
-      scrollToTop();
-    }, sentence.length * 1 + 5000);
+      $("body").animate({scrollTop:0},2000)
+    }, sentence.length * 0.75 + 5000);
 
 
   for(var i = 0; i < sentence.length; i++){
@@ -27,7 +19,7 @@ $(document).ready(function () {
           $("body").html($("body").html() + sentence[index]); 
         }
         window.scrollTo(0,document.body.scrollHeight);
-      }, 1 * i);
+      }, 0.75 * i);
     })(i);
   }
 }
