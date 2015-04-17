@@ -1,30 +1,50 @@
 module.exports = function(grunt) {
-  require('jit-grunt')(grunt);
+require('jit-grunt')(grunt);
 
-  grunt.initConfig({
+grunt.initConfig({
     less: {
-      development: {
-        options: {
-          compress: true,
-          yuicompress: true,
-          optimization: 2
-        },
-        files: {
-          "../css/styles.css": "less/styles.less" // destination file and source file
+        development: {
+            options: {
+                compress: true,
+                yuicompress: true,
+                optimization: 2
+            },
+            files: {
+                "../css/styles.css": "less/styles.less" // destination file and source file
+            }
         }
-      }
+    },
+    jade: {
+        compile: {
+            options: {
+                client: false,
+                pretty: true
+            },
+            files: [ {
+                cwd: "jade/",
+                src: "**/*.jade",
+                dest: "../",
+                expand: true,
+                ext: ".html"
+            } ]
+        }
     },
     watch: {
-      styles: {
-        files: ['less/**/*.less'], // which files to watch
-        tasks: ['less'],
-        options: {
-          nospawn: true
-        }
-      }
-    }
+        styles: {
+            files: ['less/**/*.less'], // which files to watch
+                              tasks: ['less'],
+                              options: {
+                                  nospawn: true
+                              }
+                          }, 
+                         jade: {
+                            files: ['jade/*.jade'], // which files to watch
+                            tasks: ['jade']
+                         }
+          }
   });
 
-  grunt.registerTask('default', ['less', 'watch']);
+  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.registerTask('default', ['less', 'watch', 'jade']);
 };
 
