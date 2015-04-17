@@ -5,9 +5,9 @@ grunt.initConfig({
     less: {
         development: {
             options: {
-                compress: true,
-                yuicompress: true,
-                optimization: 2
+                compress: false,
+                yuicompress: false,
+                optimization: 0
             },
             files: {
                 "../css/styles.css": "less/styles.less" // destination file and source file
