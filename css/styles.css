@@ -2,6 +2,7 @@ body {
   background: #efefef;
   color: #333;
 }
+strong { font-weight:700}
 h2 {
   font-family: "Crete Round", Georgia, sans;
 }
@@ -30,6 +31,17 @@ section h2 {
 }
 section > div {
   padding: 10px 20px;
+}
+@media all {
+  .page-break {
+    display: none;
+  }
+}
+@media print {
+  .page-break {
+    display: block;
+    page-break-before: always;
+  }
 }
 header h1 {
   font-family: Patua One, Helvetica Neue, Arial;

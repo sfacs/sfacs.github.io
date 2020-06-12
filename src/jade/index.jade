@@ -21,14 +21,13 @@ html(lang="en")
 
     // JS
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
-    script(src="js/script.js")
+    // script(src="js/script.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js")
     script.
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
                 ga('create', 'UA-4491088-3', 'auto');
                   ga('send', 'pageview');
 
@@ -39,7 +38,7 @@ html(lang="en")
       .contact
         h2 JULIEN VERFAILLIE
         p.
-          #[i Fluent in English, French, and Spanish]<br>
+          #[i Fluent in Kotlin, English, French, and Spanish]<br>
           #[i Experience working with remote teams]<br>
           (939) 240 1258<br>
           Guaynabo, PR 00966 <br>
@@ -49,44 +48,41 @@ html(lang="en")
 
     section#summary
       h2 Summary
-      p I'm a Senior Android Engineer with a strong academic background and 10+ years of hands-on software development experience. I've been part of the Android leadership team for various mobile projects including the NFL video applicaion, NFL NOW.
-      p I’m interested in architectural and engineering solutions that make testable, reliable and performant applications. I have strong attitude towards writing clean, maintainable, extensible and reusable code. I like learning new techniques and best practices to make my code efficient and easy to understand.
+      p I'm a Senior Android Engineer with a strong academic background and 10+ years of hands-on software development experience. I've been part of the Android leadership team for various mobile projects including the NFL video application, NFL Mobile
+      p I’m interested in architectural and engineering solutions that make testable, reliable and performant applications. I have a strong attitude towards writing clean, maintainable, extensible and reusable code. I like learning new techniques and best practices to make my code efficient and easy to understand.
       p I have years of experience in working and managing remote development teams.
 
-    
-      ul
-        li Hands on experience in Android SDK based application development.
-        li Experienced on Android video apps, using several media player including Adobe Primetime, Exoplayer, Nexplayer.
-        li Deep knowledge of the Leanback Support Library, used to develop AndroidTV and Amazon FireTV apps.
-        li Wide experience writing Apps with Activities, Services, Broadcast Receivers, Content Providers, multithreading etc.
-        li Understanding Object-Oriented design patterns and successfully implemented the concepts in Android.
-        li Experience in Android’s frameworks (i.e., Retrofit, Dagger, Picasso, Glide)
-        li Great knowledge of Git workflows and internals.
-        li Strived for elegance and simplicity in code while focusing on scalability, readability and standards complicity.
-        li Experience in requirement gathering, architectural design, and functional design and turning requirement to product.
-        li Strong ability to perform complex analysis, design and development.
-        li Adept at quickly adapting to new environments, new technologies and facing new challenges.
-        li Fluent in English, French and Spanish.
 
+      ul
+        li Hands on experience in Android SDK based application development, with emphasis on RxJava and Kotlin.
+        li Well-versed in the React and ReactNative SDK 
+        li Experienced in Android video apps, using several media players including Anvato, Adobe Primetime, Exoplayer, Nexplayer.
+        li In-depth knowledge of the Leanback Support Library, used to develop AndroidTV and Amazon FireTV apps.
+        li Understanding Object-Oriented design patterns and successfully implemented the concepts in Android.
+        li Experienced in Android’s tools and frameworks (i.e. Retrofit, Dagger, Picasso, Glide)
+        li Excellent knowledge of Git workflows and internals.
+        li Strived for elegance and simplicity in code while focusing on scalability, readability and standards complicity.
+        li Experience in requirement gathering, architectural design, functional design and turning requirement to a product.
+        li Strong ability to perform complex analysis, design, and development.
+        li Adept at quickly adapting to new environments, new technologies, and facing new challenges.
+        li Fluent in English, French, and Spanish.
+
+    .page-break
     section#employments
       h2 Employment History
-      .empoyment
-        h3 Co-Founder / CTO
-        h4 Expack
-        h5 April 2016 - Present
-        p. 
-          Expack is the first monthly subscription service for expatriates. Every month, members receive a box of carefully curated goodies from their home country. There's no place like home, and there's no box like Expack!
 
 
       .employment
         h3 Senior Android Developer
         h4 Nomads - NFL
         h5 March 2016 - Present
-       ul
-         li Collaborating remotely with a team to develop the #[a(href="https:\/\/play.google.com\/store\/apps\/details?id=com.gotv.nflgamecenter.us.lite&hl=en") NFL Mobile] app, with 50+ millions of installs.
-          li Worked closely with design, and product team to implement the Android TV and Fire TV NFL app.
-          li Code base heavily relies on RxJava 
-          li Customized the Leanback Support Library to adapt to custom UIs.
+        ul
+          li Collaborated remotely with a team to develop the #[a(href="https:\/\/play.google.com\/store\/apps\/details?id=com.gotv.nflgamecenter.us.lite&hl=en") NFL Mobile] app, with 50+ millions of installs.
+          li Participated in the port of the Android app to a React Native app, explicitly setting up bridges between React and Android native code running Anvato player.
+          li Worked closely with design, and product team to implement Android, Android TV and Fire TV NFL app.
+          li Migrated code from Java to Kotlin
+          li Codebase heavily relies on RxJava
+          li Customized the Leanback TV Support Library to adapt to custom UIs.
           li Worked with Adobe Primetime player to support HLS playback
           li Implemented Universal Search to get suggestions from the NFL app on Android TV
           li Implemented In-app billing services for both Android TV and Fire TV on the Google Play Store and Amazon App Store respectively.
@@ -96,7 +92,6 @@ html(lang="en")
           li Worked with Requery to access the SQLite database
           li Employed unit tests using Mockito / RoboElectric. 
           li Tested and debugged the application by using Charles Web Proxy
-
       .employment
         h3 Senior Android Developer
         h4 Nomads - Internal Development
@@ -109,11 +104,19 @@ html(lang="en")
           li Used Butterknife for view injection
           li Consumed Restful web service by using Retrofit library
 
+      .empoyment
+        h3 Co-Founder / CTO
+        h4 Expack
+        h5 April 2016 - Present
+        p.
+          Expack is the first monthly subscription service for expatriates. Every month, members receive a box of carefully curated goodies from their home country. There's no place like home, and there's no box like Expack!
+
+
       .employment
         h3 Senior Android Developer
         h4 Nomads - EcoCr
         h5 June 2015 - October 2015
-        p Android development of a vehicle inventory & inspection application. 
+        p Android development of a vehicle inventory & inspection application.
         ul
           li Implementation of a REST layer with Retrofit
           li SQLite database
@@ -123,9 +126,9 @@ html(lang="en")
 
       .employment
         h3 Senior Android Developer
-        h4 Nomads - GenerosiTrend 
-        h5 March 2015 - June 2015 
-        p Sencha/Cordova development of a Twitter Celebrity Charity application - GenerosiTrend. 
+        h4 Nomads - GenerosiTrend
+        h5 March 2015 - June 2015
+        p Sencha/Cordova development of a Twitter Celebrity Charity application - GenerosiTrend.
         ul
           li Javascript mobile application framework
           li REST API
@@ -148,10 +151,11 @@ html(lang="en")
         h4 Nomads - Newlio
         h5 July 2013 - January 2014
         p Web development of a survey platform using Yii Framework , PHP, HTML5, CSS, Bootstrap, jQuery.
-      
+
+      .page-break
       .employment
         h3 PHP Developer
-        h4 Q Interactive 
+        h4 Q Interactive
         h5 January 2012 - August 2013
         p Web Application development using Wordpress, Symfony, PHP, HTML5, jQuery.
 
@@ -181,7 +185,7 @@ html(lang="en")
           Interface between Resource Department and IT Department, in order to adapt the technologies used to their needs.
 
       .employment
-        h3 Software Engineer 
+        h3 Software Engineer
         h4 Opencube Technologies
         h5 September 2008 -  February 2009
         p.
@@ -192,12 +196,12 @@ html(lang="en")
         h3 Software Developer
         h4 Computer Sciences Research Laboratory of IUT Amiens
         h5 July - August 2007
-        p. 
+        p.
           C++ implementation of algorithms for shape recognition in an omnidirectional stereoscopic video (using Generalized Hough Transform).<br>
           Use of OpenCV library.
 
       .employment
-        h3 Accountant 
+        h3 Accountant
         h4 Cabinet KPMG
         h5 December 2004 &amp; June 2006
         p Integration in a public accountant team.
@@ -231,18 +235,19 @@ html(lang="en")
         h4 Lycée la Providence Amiens
         p Baccalauréat - Majored in Sciences
 
+    .page-break
     section#knowledges
       h2 Technical Knowledge
       .knowledge
         h3 Software development
-        p Languages: Java, Android Development, PHP, Mysql, HTML, CSS3, Javascript, Ajax, C / C++, Python, Shell Scripting.
-        p Libraries/Frameworks: Android SDK, Gradle, IMA SDK, Chromecast SDK, NexPlayer, SDL, Qt, OpenSSL, OpenCV, CakePHP, jQuery. 
+        p Languages: Java, Kotlin, Android Development, React Native, ES6, PHP, Mysql, HTML, CSS3, C / C++, Python, Shell Scripting.
+        p Libraries/Frameworks: Android SDK, React, ReactNative, Gradle, IMA SDK, Chromecast SDK, Anvato, Adobe Primetime, NexPlayer, SDL, Qt, OpenSSL, OpenCV, CakePHP, jQuery.
         p Version Control Systems: Git, SVN, ClearCase, CVS.
 
       .knowledge
         h3 OS and softwares
         p OS: OSX, Ubuntu.
-        p Code Editor: Android Studio, Vim, Atom
+        p Code Editor: Android Studio, Webstorm, Vim
         p Design Tools: Sketch, Photoshop, Illustrator, Indesign
 
 
